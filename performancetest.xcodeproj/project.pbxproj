@@ -11,6 +11,7 @@
 		CEFE28572964E5CC006813B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFE28562964E5CC006813B8 /* ContentView.swift */; };
 		CEFE28592964E5CD006813B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFE28582964E5CD006813B8 /* Assets.xcassets */; };
 		CEFE285C2964E5CD006813B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFE285B2964E5CD006813B8 /* Preview Assets.xcassets */; };
+		CEFE28632964E5E2006813B8 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFE28622964E5E2006813B8 /* TestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		CEFE28562964E5CC006813B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEFE28582964E5CD006813B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEFE285B2964E5CD006813B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CEFE28622964E5E2006813B8 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				CEFE28562964E5CC006813B8 /* ContentView.swift */,
 				CEFE28582964E5CD006813B8 /* Assets.xcassets */,
 				CEFE285A2964E5CD006813B8 /* Preview Content */,
+				CEFE28622964E5E2006813B8 /* TestView.swift */,
 			);
 			path = performancetest;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEFE28632964E5E2006813B8 /* TestView.swift in Sources */,
 				CEFE28572964E5CC006813B8 /* ContentView.swift in Sources */,
 				CEFE28552964E5CC006813B8 /* performancetestApp.swift in Sources */,
 			);
@@ -275,6 +279,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +309,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

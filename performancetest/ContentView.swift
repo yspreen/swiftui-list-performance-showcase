@@ -8,19 +8,41 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
+	var body: some View {
+		TestView()
+			.environmentObject(globalState)
+			.task {
+				(0...10000).forEach { _ in
+					globalState.newItem()
+				}
+				updateLater()
+			}
+	}
+
+	func updateLater() {
+		DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + 0.5) {
+			update()
+		}
+	}
+
+	func update() {
+		DispatchQueue.main.async {
+			let id = globalState.itemIds[3]
+			var item = globalState.itemDict[id]!
+			item.newColor()
+			item.text = "changed"
+			globalState.itemDict[id] = item
+		}
+		updateLater()
+	}
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+extension State {
+	func newItem() {
+		let item = Item()
+		itemDict[item.id] = item
+		itemIds.append(item.id)
+	}
 }
+
+let globalState = State()
